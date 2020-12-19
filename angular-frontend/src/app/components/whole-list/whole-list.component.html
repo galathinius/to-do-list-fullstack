@@ -1,0 +1,19 @@
+<p>whole-list works!</p>
+<div class='all-items'>
+    <mat-card *ngFor="let item of toDos" class='one-item' >
+        <mat-card-header>
+          <div mat-card-avatar ></div>
+          <mat-card-title>{{item.name}}</mat-card-title>
+          <mat-card-subtitle>To Do Item</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            {{item.content}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <!-- <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button> -->
+        </mat-card-actions>
+      </mat-card>
+</div>

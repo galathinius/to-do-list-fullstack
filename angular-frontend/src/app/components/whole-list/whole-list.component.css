@@ -1,0 +1,12 @@
+.all-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: stretch;
+
+}
+
+.one-item{
+    margin: 10px 0 10px 0;
+}
