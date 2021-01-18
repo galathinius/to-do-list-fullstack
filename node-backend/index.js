@@ -1,3 +1,5 @@
+import { notes } from './notes'
+
 const express = require('express')
 const app = express()
 const cors = require('cors')
@@ -14,27 +16,6 @@ const requestLogger = (request, response, next) => {
 }
 
 app.use(requestLogger)
-
-let notes = [
-  {
-    name: 'exam pr',
-    content: 'protocoale si multithreading la burlacu',
-    id: 0,
-    done: false
-  },
-  {
-    name: 'exam cs',
-    content: 'catanoi',
-    id: 1,
-    done: false
-  },
-  {
-    name: 'exam ecd',
-    content: 'am scapat',
-    id: 2,
-    done: true
-  }
-]
 
 app.get('/', (request, response) => {
   response.send('<h1>Hello World!</h1>')
